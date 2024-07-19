@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anderson do Aeroporto</title>
+</head>
+<body>
+    <h1>Verificador de Brasileirismo</h1>
+    <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Verificar" onclick="clicar()">
+    <div id="res">Vendo se é menino ou menina...</div>
+
+    <script>
+        function clicar(){
+            var txpais = document.querySelector('input#txtpais')
+            var txres = document.querySelector('div#res')
+            var pais = String(txpais.value)
+
+            if (pais != 'Brasil') {
+                txres.innerHTML = `<p>Gringo Safado, <strong>não entra!</strong></p>`
+                txres.innerHTML += `<p>Volta pro seu país, aquela merda que você chama de ${pais}</p>`
+            } else {
+                txres.innerHTML = `<p>Bem vindo de volta ao <strong>${pais}!</strong></p>`
+            }
+        }
+    </script>
+</body>
+</html>

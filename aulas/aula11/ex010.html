@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+</head>
+<body>
+    <h1>Multação Ilegal</h1>
+    <input type="number" name="txtvel" id="txtvel">
+    <input type="button" value="verificar" onclick="clicar()">
+    <div id="res">Analisando...</div>
+
+    <script>
+        function clicar() {
+        var tvel = document.querySelector('input#txtvel')
+        var tres = document.querySelector('div#res')
+        var vel = Number(tvel.value)
+
+        if (vel > 80) {
+            tres.innerText = `${vel}Km/h amigão?, da uma segurada aí, MULTADO!`
+        } else {
+            tres.innerText = `${vel}Km/h ta até devagar, ta atrasando os outros aí!`
+        }
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+:root {
+    --cor01: rgb(17, 114, 226);
+    --fonte01: Arial, sans-serif;
+}
+
+body {
+    background-color: var(--cor01);
+    font-family: var(--fonte01);
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+main {
+    background-color: white;
+    width: 500px;
+    margin: auto;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.404);
+}
+
+footer {
+    font: italic bold 1em var(--fonte01);
+    color: white;
+    text-align: center;
+}
